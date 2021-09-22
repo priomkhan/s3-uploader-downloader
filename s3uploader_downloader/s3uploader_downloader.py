@@ -202,7 +202,7 @@ class UploaderDownloaderXBlock(XBlock):
         if folder_name is None:
             folder_name = course_level
         else:
-	    folder_name = course_level + '/' + folder_name
+	        folder_name = course_level + '/' + folder_name
         fileuploader = FileAndUrl()
         fileuploader.create_record(file_name, file_title, description, uploaded_by, unit_id, course_level, folder_name, is_url)
         return
