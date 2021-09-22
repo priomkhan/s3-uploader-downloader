@@ -232,7 +232,7 @@ class UploaderDownloaderXBlock(XBlock):
             aws_bucket = S3.get_bucket(bucket_name, validate=False)
 
             fileuploader = FileAndUrl()
-	    log.info(u"fileuploader.get_file_path(file_id)%s",fileuploader.get_file_path(file_id))
+            log.info(u"fileuploader.get_file_path(file_id)%s",fileuploader.get_file_path(file_id))
             #Delete for S3
             file_key = Key(aws_bucket, fileuploader.get_file_path(file_id))
             file_key.delete()
