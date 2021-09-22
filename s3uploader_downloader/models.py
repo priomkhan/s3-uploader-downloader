@@ -53,6 +53,6 @@ class FileAndUrl():
     def get_file_path(self, file_id):
         file = FileUploadAndUrl.objects.get(id=file_id)
         if file.folder_name == file.course_level:
-	    return file.course_level+"/"+file.unit_id+"/"+file.src_name
+            return file.course_level+"/"+file.unit_id+"/"+file.src_name
         else:
             return file.folder_name+"/"+file.unit_id+"/"+file.src_name
